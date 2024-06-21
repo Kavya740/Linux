@@ -1,0 +1,460 @@
+    1  sudo apt update
+    2  sudo nano /etc/resolv.conf 
+    3  sudo apt update
+    4  sudo apt upgrade
+    5  sudo apt install gcc++
+    6  sudo apt install gcc
+    7  sudo apt install build-essentials
+    8  sudo apt install build-essential
+    9  sudo apt install gdb
+   10  init 0
+   11  gcc --version
+   12  cd "/home/rps/Desktop/C Demo/" && gcc first.c -o first && "/home/rps/Desktop/C Demo/"first
+   13  sudo su
+   14  tar xvfz node_exporter-1.7.0.linux-amd64.tar.gz 
+   15  cd node_exporter-1.7.0.linux-amd64/
+   16  sudo mv node_exporter /usr/local/bin/
+   17  sudo tee /etc/systemd/system/node_exporter.service<<EOF
+   18  [Unit]
+   19  Description=Node Exporter
+   20  After=network.target
+   21   
+   22  [Service]
+   23  User=rps
+   24  Group=rps
+   25  Type=simple
+   26  ExecStart=/usr/local/bin/node_exporter
+   27   
+   28  [Install]
+   29  WantedBy=multi-user.target
+   30  EOF
+   31  sudo systemctl daemon-reload
+   32  sudo systemctl start node_exporter
+   33  sudo systemctl enable node_exporter
+   34  sudo systemctl status node_exporter
+   35  sudo apt install gcc
+   36  sudo apt install git
+   37  sudo apt install make
+   38  sudo apt install vim
+   39  sudo apt install g++
+   40  sudo apt install gedit
+   41  sudo apt install cmake
+   42  sudo apt install g++
+   43  df -h
+   44  sudo apt update
+   45  sudo apt upgrade
+   46  sudo reboot
+   47  man
+   48  ls
+   49  mkdir list
+   50  cd list
+   51  pwd
+   52  cd ..
+   53  mkdir list1
+   54  pwd
+   55  cd list1
+   56  pwd
+   57  cat file1.txt
+   58  cat > file1.txt
+   59  cat file1.txt
+   60  cd ..
+   61  cd list
+   62  cat > file2.txt
+   63  cat  file2.txt
+   64  mv list1 new_list1
+   65  cd list1
+   66  cd ..
+   67  cd list 1
+   68  cd list1
+   69  ls
+   70  mv list1 new_list1
+   71  cd ..
+   72  open <file1.txt>
+   73  cd list
+   74  open <file1.txt>
+   75  open file1.txt
+   76  open file2.txt
+   77  mkdir string
+   78  cdc striiing
+   79  cd string
+   80  cd ..
+   81  cd string
+   82  cd list
+   83  ls
+   84  cd string
+   85  cat > file3.txt
+   86  cat file3.txt
+   87  cd .
+   88  cd ..
+   89  touch file4.txt fie5.txt 
+   90  cd ..
+   91  mkdir list3
+   92  cp -r list1 list3
+   93  cd list3
+   94  ls
+   95  cd list1
+   96  ls
+   97  cd ..
+   98  mv file2.txt list
+   99  mv file1.txt list
+  100  find . -name "file1.txt"
+  101  ln file2.txt newfile2.txt
+  102  cd list
+  103  ln file1.txt newfile1.txt
+  104  ln file2.txt newfile2.txt
+  105  ls
+  106  cd newfile2.txt
+  107  cat newfile2.txt
+  108  cat fie5.txt
+  109  ls
+  110  cd file4.txt
+  111  cd ..
+  112  cd list1
+  113  ls
+  114  gzip file1.txt
+  115  ls
+  116  gunzip file.txt
+  117  gunzip file1.txt
+  118  ls
+  119  cd ..
+  120  list
+  121  cd list
+  122  ls
+  123  cat file2.txt
+  124  cat file4/txt
+  125  cat file4.txt
+  126  cat > file4.txt
+  127  tar -cf archive.tar file2.txt file4.txt
+  128  ls
+  129  cat archive,tar
+  130  cat file4.txt
+  131  cd ..
+  132  cat > file4.txt
+  133  cd list3
+  134  ls
+  135  cd ..
+  136  cd list
+  137  ls
+  138  cat > fie5.txt
+  139  cd ..
+  140  cd list
+  141  ls
+  142  cat fie5.txt
+  143  tar -cf archive.tar file4.txt fie5.txt
+  144  ls
+  145  cat archive .tar
+  146  cat archive.tar
+  147  alias ll='ls-al'
+  148  ls
+  149  less file2.txt
+  150  ls
+  151  less file2.txt
+  152  cat file2.txt
+  153  cat > file2.txt
+  154  ls
+  155  tail file2.txt
+  156  wc file2.txt
+  157  cat file2.txt
+  158  wc file2.txt
+  159  wc -c file2.txt
+  160  ls
+  161  grep file2.txt
+  162  cd
+  163  cd list1
+  164  ls
+  165  cat > file1.txt
+  166  ls
+  167  cat file1.txt
+  168  ls
+  169  grep hi file1.txt
+  170  grep hello file1.txt
+  171  cd ..
+  172  sudo apt upgrade
+  173  cd list1
+  174  ls
+  175  sort file1.txt
+  176  sort -r file1.txt
+  177  cat file1.txt
+  178  cat > file1.txt
+  179  ls
+  180  cat file1.txt
+  181  uniq file1.txt
+  182  cd
+  183  cd list
+  184  ls
+  185  diff file2.txt file4.txt
+  186  echo "hello, world!"
+  187  name="alice"
+  188  echo "hello, $name!"
+  189  sudo chown alice file2.txt
+  190  cd ..
+  191  cd list
+  192  ls
+  193  chown newfile4.txt:file4.txt
+  194  chmod file2.txt
+  195  ch 777 file2.txt
+  196  chmod 777 file2.txt
+  197  ls -l file2.txt
+  198  chmod 755 file2.txt
+  199  ls -l file2.txt
+  200  umask 022
+  201  ls
+  202  ls -l file2.txt
+  203  du file2.txt
+  204  df -h
+  205  basename  file2.txt
+  206  ps -u
+  207  top
+  208  kil <PID>
+  209  killall file4.txt
+  210  kill  1234
+  211  kill 5411
+  212  history
+  213  top
+  214  cd list
+  215  ls
+  216  which ls
+  217  which file2.txt
+  218  which ln
+  219  ping 8.8.8.8
+  220  type ls
+  221  type ln
+  222  ls
+  223  rm -rf fie5.txt
+  224  ls
+  225  cd ..
+  226  history
+  227  touch historycommand.txt
+  228  ls
+  229  history >> history.txt
+    1  sudo apt update
+    2  sudo nano /etc/resolv.conf 
+    3  sudo apt update
+    4  sudo apt upgrade
+    5  sudo apt install gcc++
+    6  sudo apt install gcc
+    7  sudo apt install build-essentials
+    8  sudo apt install build-essential
+    9  sudo apt install gdb
+   10  init 0
+   11  gcc --version
+   12  cd "/home/rps/Desktop/C Demo/" && gcc first.c -o first && "/home/rps/Desktop/C Demo/"first
+   13  sudo su
+   14  tar xvfz node_exporter-1.7.0.linux-amd64.tar.gz 
+   15  cd node_exporter-1.7.0.linux-amd64/
+   16  sudo mv node_exporter /usr/local/bin/
+   17  sudo tee /etc/systemd/system/node_exporter.service<<EOF
+   18  [Unit]
+   19  Description=Node Exporter
+   20  After=network.target
+   21   
+   22  [Service]
+   23  User=rps
+   24  Group=rps
+   25  Type=simple
+   26  ExecStart=/usr/local/bin/node_exporter
+   27   
+   28  [Install]
+   29  WantedBy=multi-user.target
+   30  EOF
+   31  sudo systemctl daemon-reload
+   32  sudo systemctl start node_exporter
+   33  sudo systemctl enable node_exporter
+   34  sudo systemctl status node_exporter
+   35  sudo apt install gcc
+   36  sudo apt install git
+   37  sudo apt install make
+   38  sudo apt install vim
+   39  sudo apt install g++
+   40  sudo apt install gedit
+   41  sudo apt install cmake
+   42  sudo apt install g++
+   43  df -h
+   44  sudo apt update
+   45  sudo apt upgrade
+   46  sudo reboot
+   47  man
+   48  ls
+   49  mkdir list
+   50  cd list
+   51  pwd
+   52  cd ..
+   53  mkdir list1
+   54  pwd
+   55  cd list1
+   56  pwd
+   57  cat file1.txt
+   58  cat > file1.txt
+   59  cat file1.txt
+   60  cd ..
+   61  cd list
+   62  cat > file2.txt
+   63  cat  file2.txt
+   64  mv list1 new_list1
+   65  cd list1
+   66  cd ..
+   67  cd list 1
+   68  cd list1
+   69  ls
+   70  mv list1 new_list1
+   71  cd ..
+   72  open <file1.txt>
+   73  cd list
+   74  open <file1.txt>
+   75  open file1.txt
+   76  open file2.txt
+   77  mkdir string
+   78  cdc striiing
+   79  cd string
+   80  cd ..
+   81  cd string
+   82  cd list
+   83  ls
+   84  cd string
+   85  cat > file3.txt
+   86  cat file3.txt
+   87  cd .
+   88  cd ..
+   89  touch file4.txt fie5.txt 
+   90  cd ..
+   91  mkdir list3
+   92  cp -r list1 list3
+   93  cd list3
+   94  ls
+   95  cd list1
+   96  ls
+   97  cd ..
+   98  mv file2.txt list
+   99  mv file1.txt list
+  100  find . -name "file1.txt"
+  101  ln file2.txt newfile2.txt
+  102  cd list
+  103  ln file1.txt newfile1.txt
+  104  ln file2.txt newfile2.txt
+  105  ls
+  106  cd newfile2.txt
+  107  cat newfile2.txt
+  108  cat fie5.txt
+  109  ls
+  110  cd file4.txt
+  111  cd ..
+  112  cd list1
+  113  ls
+  114  gzip file1.txt
+  115  ls
+  116  gunzip file.txt
+  117  gunzip file1.txt
+  118  ls
+  119  cd ..
+  120  list
+  121  cd list
+  122  ls
+  123  cat file2.txt
+  124  cat file4/txt
+  125  cat file4.txt
+  126  cat > file4.txt
+  127  tar -cf archive.tar file2.txt file4.txt
+  128  ls
+  129  cat archive,tar
+  130  cat file4.txt
+  131  cd ..
+  132  cat > file4.txt
+  133  cd list3
+  134  ls
+  135  cd ..
+  136  cd list
+  137  ls
+  138  cat > fie5.txt
+  139  cd ..
+  140  cd list
+  141  ls
+  142  cat fie5.txt
+  143  tar -cf archive.tar file4.txt fie5.txt
+  144  ls
+  145  cat archive .tar
+  146  cat archive.tar
+  147  alias ll='ls-al'
+  148  ls
+  149  less file2.txt
+  150  ls
+  151  less file2.txt
+  152  cat file2.txt
+  153  cat > file2.txt
+  154  ls
+  155  tail file2.txt
+  156  wc file2.txt
+  157  cat file2.txt
+  158  wc file2.txt
+  159  wc -c file2.txt
+  160  ls
+  161  grep file2.txt
+  162  cd
+  163  cd list1
+  164  ls
+  165  cat > file1.txt
+  166  ls
+  167  cat file1.txt
+  168  ls
+  169  grep hi file1.txt
+  170  grep hello file1.txt
+  171  cd ..
+  172  sudo apt upgrade
+  173  cd list1
+  174  ls
+  175  sort file1.txt
+  176  sort -r file1.txt
+  177  cat file1.txt
+  178  cat > file1.txt
+  179  ls
+  180  cat file1.txt
+  181  uniq file1.txt
+  182  cd
+  183  cd list
+  184  ls
+  185  diff file2.txt file4.txt
+  186  echo "hello, world!"
+  187  name="alice"
+  188  echo "hello, $name!"
+  189  sudo chown alice file2.txt
+  190  cd ..
+  191  cd list
+  192  ls
+  193  chown newfile4.txt:file4.txt
+  194  chmod file2.txt
+  195  ch 777 file2.txt
+  196  chmod 777 file2.txt
+  197  ls -l file2.txt
+  198  chmod 755 file2.txt
+  199  ls -l file2.txt
+  200  umask 022
+  201  ls
+  202  ls -l file2.txt
+  203  du file2.txt
+  204  df -h
+  205  basename  file2.txt
+  206  ps -u
+  207  top
+  208  kil <PID>
+  209  killall file4.txt
+  210  kill  1234
+  211  kill 5411
+  212  history
+  213  top
+  214  cd list
+  215  ls
+  216  which ls
+  217  which file2.txt
+  218  which ln
+  219  ping 8.8.8.8
+  220  type ls
+  221  type ln
+  222  ls
+  223  rm -rf fie5.txt
+  224  ls
+  225  cd ..
+  226  history
+  227  touch historycommand.txt
+  228  ls
+  229  history >> history.txt
+  230  ls
+  231  history >> history.txt
